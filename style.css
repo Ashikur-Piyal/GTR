@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 1184px;
+  
+}
+.upper_part{
+  background-color: rgb(248, 248, 248);
+  height: 85vh; /* Set height to 70% of the viewport height */
+  position: relative; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.navbar .logo {
+  font-size: .8rem;
+  margin-right: 120px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: .8em;
+}
+.sign-up {
+  height: 30px;
+  width: 80px;
+  background-color: black; /* Set background color to black */
+  color: white !important;            /* Set text color to white */
+  display: flex;           /* Flexbox to align text */
+  justify-content: center; /* Center the text horizontally */
+  align-items: center;     /* Center the text vertically */
+  border-radius: 5px;      /* Optional: Add rounded corners */
+  text-decoration: none;   /* Optional: Remove underline if it's a link */
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+#home {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center;     /* Center horizontally */
+           /* Make the section take the full viewport height */
+  text-align: center;      /* Center the text */
+  margin-bottom: 50px;
+  
+}
+#home p{
+  color: rgb(99, 97, 97);
+  font-size: .8rem;
+}
+
+#home h1 {
+  font-size: 1.8rem;       /* Adjust heading size */
+  margin: 10px 0;          /* Add some spacing between elements */
+  max-width: 340px; 
+}
+
+.colorful{
+  background: linear-gradient(to right, magenta, blue);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.create_account{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  margin-bottom: 25px;
+  font-size: .8rem;
+}
+
+.create_account:hover{
+  cursor: pointer;
+}
+.trial {
+  font-size: .6rem !important;
+  font-weight: lighter;
+  color: gray ;
+}
+.gap{
+  padding: 14px;
+}
+
+
+#hamburger-nav{
+  display: none;
+}
+.hamburger-menu{
+  position: relative;
+  display: inline-block;
+}
+.hamburger-icon{
+  display: flex;
+  margin-right: 1vh;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span{
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-link{
+  position: absolute;
+  top: 100%;
+  right: -40px;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-link a{
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+
+}
+
+.menu-link li{
+  list-style: none;
+
+}
+
+.menu-link.open{
+  max-height: 300px;
+} 
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child{
+  transform: none;
+}
+.hamburger-icon span:first-child{
+  opacity: 1;
+}
+.hamburger-icon span:first-child{
+  transform: none;
+}
+.image {
+  position: relative; /* Set the position to relative */
+  display: inline-block; /* Ensure the div wraps the image */
+  margin-top: -32vh;
+}
+#img{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.image img {
+  max-height: 300px;
+  width: 600px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.8); /* White circle with transparency */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+.play-button {
+  position: absolute; /* Position the play button absolutely */
+  top: 50%; /* Move down 50% of the parent height */
+  left: 50%; /* Move right 50% of the parent width */
+  transform: translate(-50%, -50%); /* Adjust the position to truly center */
+  cursor: pointer; /* Change the cursor to pointer for interactivity */
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  border-left: 15px solid black; /* Reduced width of the play triangle */
+  border-right: 15px solid transparent; /* Right side of the triangle */
+  border-top: 10px solid transparent; /* Top of the triangle */
+  border-bottom: 10px solid transparent; /* Bottom of the triangle */
+}
+
+

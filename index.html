@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    
+</head>
+<body>
+  <section class="upper_part">
+       <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">CIRCLE</div>
+      
+      <ul class="nav-links">
+          <li><a href="#feature">Features</a> </li>
+          <li><a href="#pricing">Pricing</a> </li>
+          <li><a href="#about">About Us</a> </li>
+      </ul>
+  </div>
+  <div>
+    <ul class="nav-links">
+        <li><a href="#login">Customer Login</a> </li>
+        <li><a href="#sign-up" class="sign-up">Sign up</a> </li>
+       
+
+    </ul>
+</div>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo"> CIRCLE</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu-link">
+        <li><a href="#feature" onclick="toggleMenu()">Features</a> </li>
+        <li><a href="#pricing" onclick="toggleMenu()">Pricing</a> </li>
+        <li><a href="#about" onclick="toggleMenu()">About Us</a> </li>
+        <li><a href="#login" onclick="toggleMenu()">Customer Login</a> </li>
+        <li><a href="#sign-up" onclick="toggleMenu()">Sign up</a> </li>
+
+        
+    </div>
+
+    </div>   
+</nav>
+
+  <!-- Content Section -->
+  <section id="home">
+    <p>An AI tool made for conversion rate optimization</p>
+      <h1>Increase your conversion rate <span class="colorful">using AI</span></h1>
+      <button class="create_account">Create account</button>
+      <p class="trial">30 Days free trial <span class="gap">|</span> No credit card required</p>
+  </section>
+  </section>
+    
+  <section id="img">
+      <div class="image">
+         <img src="IMG/15e5467dfdbaa2db5881d818fb349322.png" alt="">
+        <div class="play-button">
+          <div class="play-icon"></div>
+        </div>
+      </div>
+
+  </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

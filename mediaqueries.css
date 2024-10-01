@@ -1,0 +1,87 @@
+@media screen and (max-width: 725px) {
+
+  body {
+    height: 1184px;
+  }
+  .upper_part{
+   max-height: 65vh;
+   margin-bottom: 100px;
+  }
+  .navbar {
+    display: none;
+  }
+
+  #hamburger-nav {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #home {
+   margin-top: 50px;
+    
+  }
+  #home p {
+    font-size: 1.4rem; /* Adjusted for readability */
+    padding: 0 18px; /* Small padding adjustment */
+  }
+  #home h1 {
+    font-size: 3.5rem;       /* Adjust heading size */
+    margin: 20px 0;          /* Add some spacing between elements */
+    max-width: 65%;
+    
+  }
+
+  .colorful {
+    background: rgb(248, 50, 228);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .create_account{
+    margin: 20px;
+    margin-bottom: 30px;
+    
+  }
+  .image {
+    position: relative; /* Set the position to relative */
+    display: inline-block; /* Ensure the div wraps the image */
+    margin-top: -27vh;
+  }
+  #img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .image img {
+    max-height: 500px;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .upper_part{
+    max-height: 65vh;
+    margin-bottom: 200px;
+   }
+   #home p {
+    font-size: 1rem; /* Adjusted for readability */
+    padding: 0 18px; /* Small padding adjustment */
+  }
+  #home h1 {
+    font-size: 2.7rem;       /* Adjust heading size */
+    margin: 10px 0;          /* Add some spacing between elements */
+    max-width: 75%;
+    
+  }
+  .image {
+    position: relative; /* Set the position to relative */
+    display: inline-block; /* Ensure the div wraps the image */
+    margin-top: -39vh;
+  }
+  .image img {
+    max-height: 500px;
+    min-height: 400px;
+    width: 440px;
+  }
+}
